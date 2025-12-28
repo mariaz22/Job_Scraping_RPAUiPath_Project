@@ -1,0 +1,6 @@
+{
+  "Name": "Job_Scraping_Project",
+  "ProjectType": "Process",
+  "Description": "Robotic Enterprise Framework",
+  "MainFile": "Main.xaml"
+}
