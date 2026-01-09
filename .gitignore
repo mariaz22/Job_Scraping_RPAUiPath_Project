@@ -1,0 +1,18 @@
+﻿# UiPath Studio local files
+.local/
+.objects/
+.screenshots/
+.storage/
+# Project-generated metadata
+.project/JitCustomTypes.json
+.project/JitCustomTypesSchema.json
+# Databases & caches
+*.db
+*.cache
+# Build outputs
+*.dll
+# OS / IDE noise
+.vs/
+.idea/
+Thumbs.db
+.DS_Store
