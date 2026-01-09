@@ -1,0 +1,47 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "NExtractDataGeneric`1_1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|m4xlRb1CTBmpYueNoIc2SjbCp0ZwGWe4ExaYgPpQyk",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "JobTitle",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "JobUrl",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Company",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "City",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Salary",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "ScrapeDate",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|9RYLxgH7b1Ix5QkVwyEz7KQrT6ApbvicfKWa6cA",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    }
+  ]
+}
