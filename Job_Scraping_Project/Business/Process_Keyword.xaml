@@ -127,7 +127,11 @@
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:LogMessage DisplayName="Log Message - Jobs Scraped" sap:VirtualizedContainerService.HintSize="450,167" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Scraped &quot; &amp; If(dtJobsRaw IsNot Nothing, dtJobsRaw.Rows.Count.ToString, &quot;0&quot;) &amp; &quot; jobs for keyword: &quot; &amp; keyword]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Write Output to Excel" sap:VirtualizedContainerService.HintSize="450,150" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_WriteOutput" UnSafe="False" WorkflowFileName="DataLayer\Write_Output.xaml" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Write Output to Excel" sap:VirtualizedContainerService.HintSize="450,200" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_WriteOutput" UnSafe="False" WorkflowFileName="DataLayer\Write_Output.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtJobsRaw">[dtJobsRaw]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
     <ui:LogMessage DisplayName="Log Message - Processing Complete" sap:VirtualizedContainerService.HintSize="450,167" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Completed processing for keyword: &quot; &amp; keyword]" />
   </Sequence>
 </Activity>
